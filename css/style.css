@@ -1,0 +1,64 @@
+/********** Importing Custom Font **********/
+@font-face {
+    font-family: MonotypeCorsiva;
+    src: url(../fonts/mtcorsva.ttf);
+}
+
+/********** Start of Body **********/
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    background-color: #A40000;
+    font-family: MonotypeCorsiva;
+    font-size: 32px;
+    color: black;
+}
+/********** End of Body **********/
+
+/********** Start of Header **********/
+#header-nav{
+    margin: 0px; border: 0px; padding: 0px;
+    background-color: #f6b319;
+    border-radius: 0px;
+}
+#header-nav h1{
+    /* color: rgb(230, 205, 79); */
+    font-family: MonotypeCorsiva, bold;
+    color: white;
+    size: 20px;
+}
+#bar{
+    margin: 1em; border: 0em; padding: 0em;
+    width: 80%;
+}
+/********** End of Header **********/
+
+/********** Start of Main Content **********/
+.main-container h1{
+    margin: 0px; padding: 5px;
+}
+
+/********** End of Main Content **********/
+
+
+/********** Start of Footer **********/
+.panel-footer{
+    margin-top: 30px;
+    border-top: 0px;
+    padding-top: 35px;
+    padding-bottom: 0px;
+    background-color: #040a20;
+    color: white;
+    margin-top: auto;
+}
+.panel-footer div.container{
+    margin: 0px;
+    padding: 0px;
+}
+.panel-footer div.row{
+    margin-bottom: 35px;
+    border-radius: 0px;
+}
+/********** End of Footer **********/
