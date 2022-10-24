@@ -1,57 +1,111 @@
+/****************************** Start of Common Styling Elements ******************************/
+/**********  Universal Selectors **********/
+*{
+    box-sizing: border-box;
+    margin: 0px; border: 0px; padding: 0px;
+}
 /********** Importing Custom Font **********/
 @font-face {
     font-family: MonotypeCorsiva;
     src: url(../fonts/mtcorsva.ttf);
 }
+/********** Repeating Tiled Background **********/
+.tiledBg{
+    background: url(../images/lightBannerTBG.png);
+    position: fixed;
+    width: 120vw; height: 120vh;
+    left: -50px;
+    z-index: -1;
+}
+/****************************** End of Common Styling Elements ******************************/
 
+
+
+/****************************** Start of Body Elements Styling ******************************/
 /********** Start of Body **********/
 body{
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-
     background-color: #A40000;
     font-family: MonotypeCorsiva;
     font-size: 32px;
     color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 /********** End of Body **********/
 
 /********** Start of Header **********/
-#header-nav{
-    margin: 0px; border: 0px; padding: 0px;
+header{
     background-color: #f6b319;
-    border-radius: 0px;
 }
-#header-nav h1{
-    /* color: rgb(230, 205, 79); */
-    font-family: MonotypeCorsiva, bold;
+#header-nav{ /* https://stackoverflow.com/questions/17934332/how-do-i-position-an-image-at-the-bottom-of-div */
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 0px;
+    top: 30px;
+}
+#header-nav .scroll{
+    width: 100%;
+    height: auto;
+    max-height: 244px;
+}
+#logo-img{
+    width: 25%;
+    height: auto;
+}
+#header-nav .btn-holder{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-25%, -50%);
+}
+#header-nav .btn{
+    background-color: red;
+    border: 5px solid black;
     color: white;
-    size: 20px;
-}
-#bar{
-    margin: 1em; border: 0em; padding: 0em;
-    width: 80%;
+    width: 120px;
+    font-size: 25px;
+    text-align: center;
+    font-family: MonotypeCorsiva;
 }
 /********** End of Header **********/
 
 /********** Start of Main Content **********/
-.main-container h1{
-    margin: 0px; padding: 5px;
+.main-scroll{
+    background-image: linear-gradient(to bottom, #BFA41B, #E6CD4F, #E6CD4F, #BFA41B);
+    border: 5px solid black;
+    width: 80%;
+    height: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
-
+.main-container h1{
+    font-size: 128px;
+}
 /********** End of Main Content **********/
 
-
 /********** Start of Footer **********/
-.panel-footer{
-    margin-top: 30px;
-    border-top: 0px;
-    padding-top: 35px;
-    padding-bottom: 0px;
+footer{
+    /* margin-top: 0px; */
+    /* border-top: 0px; */
+    /* padding-top: 35px; */
+    /* padding-bottom: 0px; */
+    /* margin-top: auto; */
     background-color: #040a20;
     color: white;
-    margin-top: auto;
+}
+#footer-nav{
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 0px;
+    top: -30px;
+}
+.panel-footer .scroll{
+    width: 100%;
+    height: auto;
+    max-height: 244px;
 }
 .panel-footer div.container{
     margin: 0px;
@@ -62,3 +116,37 @@ body{
     border-radius: 0px;
 }
 /********** End of Footer **********/
+/****************************** End of Body Elements Styling ******************************/
+
+
+
+/****************************** Start of Responsive Web Design ******************************/
+/**************** Desktop View ****************/
+@media (min-width:992px)
+{
+    .col{
+        float: left;
+        width: 33%;
+    }
+}
+/****************Tablet View****************/
+@media (min-width:768px) and (max-width:991px)
+{
+    .col{
+        float: left;
+        width: 50%;
+    }
+    .col-tablet{
+        float: left;
+        width: 100%;
+    }
+}
+/****************Mobile View****************/
+@media (max-width:767px)
+{
+    .col{
+        float: left;
+        width: 100%;
+    }
+}
+/****************************** End of Responsive Web Design ******************************/
