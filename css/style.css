@@ -54,11 +54,25 @@ header{
     width: 25%;
     height: auto;
 }
-#header-nav .btn-holder{
+#btn-holder{
+    width: 80%;
     position: absolute;
+    margin: 0px auto;
     top: 50%;
-    left: 25%;
-    transform: translate(-25%, -50%);
+    transform: translate(0%, -50%);
+    left: 0%;
+    right: 0%;
+    padding: 1px;
+    background: #0fe68c;
+}
+#btn-home{
+    background: transparent;
+    background-image: url(../images/homeIcon.png);
+    background-size: cover;
+    width: 120px;
+    height: 120px;
+    font-size: 2em;
+    text-align: center;
 }
 #header-nav .btn{
     background-color: red;
@@ -69,12 +83,15 @@ header{
     text-align: center;
     font-family: MonotypeCorsiva;
 }
+#header-nav .btn:hover{
+    background-color: rgb(197, 57, 57);
+}
 /********** End of Header **********/
 
 /********** Start of Main Content **********/
 .main-scroll{
     background-image: linear-gradient(to bottom, #BFA41B, #E6CD4F, #E6CD4F, #BFA41B);
-    border: 5px solid black;
+    border: 10px solid black;
     width: 80%;
     height: 1200px;
     margin-left: auto;
@@ -82,6 +99,7 @@ header{
 }
 .main-container h1{
     font-size: 128px;
+    padding: 25px;
 }
 /********** End of Main Content **********/
 
