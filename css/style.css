@@ -55,15 +55,25 @@ header{
     height: auto;
 }
 #btn-holder{
-    width: 80%;
     position: absolute;
+    width: 80%;
+    height: 50px;
     margin: 0px auto;
     top: 50%;
     transform: translate(0%, -50%);
     left: 0%;
     right: 0%;
     padding: 1px;
-    background: #0fe68c;
+    /* background: #0fe68c; */
+
+    /* position: relative;
+    display: inline-block;
+    vertical-align: middle; */
+    
+    /* The solution to center buttons https://www.stechies.com/center-css-button/ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #btn-home{
     background: transparent;
@@ -71,20 +81,29 @@ header{
     background-size: cover;
     width: 120px;
     height: 120px;
-    font-size: 2em;
+    font-size: 1em;
     text-align: center;
+    /* position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%); */
+}
+#btn-home:hover{
+    cursor: pointer;
 }
 #header-nav .btn{
     background-color: red;
     border: 5px solid black;
     color: white;
     width: 120px;
+    height: 38px;
     font-size: 25px;
     text-align: center;
     font-family: MonotypeCorsiva;
+    margin: 0px 8px 0px 8px;
 }
 #header-nav .btn:hover{
     background-color: rgb(197, 57, 57);
+    cursor: pointer;
 }
 /********** End of Header **********/
 
@@ -98,8 +117,20 @@ header{
     margin-right: auto;
 }
 .main-container h1{
-    font-size: 128px;
+    font-size: 64px;
     padding: 25px;
+    text-align: center;
+}
+#main-content p{
+    padding: 5px;
+}
+#main-content img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: auto;
+    border: 0.25em solid black;
 }
 /********** End of Main Content **********/
 
