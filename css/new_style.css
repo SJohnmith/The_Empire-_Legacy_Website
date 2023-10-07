@@ -1,0 +1,115 @@
+/****************************** Start of Common Styling Elements ****************************/
+/**********  Universal Selectors **********/
+*{
+    box-sizing: border-box;
+    margin: 0px; border: 0px; padding: 0px;
+}
+/********** Importing Custom Font **********/
+@font-face{
+    font-family: MonotypeCorsiva;
+    src: url(../fonts/mtcorsva.ttf);
+}
+/****************************** End of Common Styling Elements ******************************/
+
+/****************************** Start of Body Elements Styling ******************************/
+/********** Start of Body **********/
+body{
+    background-color: #A40000;
+    font-family: MonotypeCorsiva;
+    font-size: 32px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/********** End of Body **********/
+
+/********** Start of Main Content **********/
+img{
+    height: auto;
+    max-width: 100%;
+    background-color: #4b4d4b;
+}
+.container{
+    position: relative;
+    /* top: 0px; left: 0px; */
+    
+    /* display: grid; */
+    /* column-gap: 10px; */
+    /* row-gap: 10px; */
+    /* grid-template-columns: auto auto auto; */
+    background-color: #2196F3;
+    padding: 10px;
+}
+.row{
+    width: 100%;
+}
+
+.btn-holder{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    background-color: #00203a;
+    padding: 10px;
+    height: auto;
+    max-width: 100%;
+}
+
+.btn-default{
+    background-image: url("/images/button_default.png");
+    background-size: 100% 100%;
+    /* line-height: 40px; */
+    /* height: 64px; */
+    /* width: 256px; */
+    width: 150px;
+    font-size: 32pt;
+
+    /* margin-top: 0.2em; */
+    text-decoration: none;
+    
+    color: white;    
+    text-align: center;
+
+    display: grid;
+    align-items: center;
+
+    margin: 0px auto;
+}
+.btn-default:hover{
+    background-image: url("/images/button_hover.png");
+    cursor: pointer;
+}
+/********** End of Footer **********/
+/****************************** End of Body Elements Styling ******************************/
+
+
+/****************************** Start of Responsive Web Design ******************************/
+/****************Desktop View****************/
+@media (min-width:992px)
+{
+    .col{
+        float: left;
+        width: 33%;
+    }
+}
+/****************Tablet View****************/
+@media (min-width:768px) and (max-width:991px)
+{
+    .col{
+        float: left;
+        width: 50%;
+    }
+    .col-tablet{
+        float: left;
+        width: 100%;
+    }
+}
+/****************Mobile View****************/
+@media (max-width:767px)
+{
+    .col{
+        float: left;
+        width: 100%;
+    }
+}
+/****************************** End of Responsive Web Design ******************************/
