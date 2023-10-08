@@ -3,7 +3,9 @@
 *{
     box-sizing: border-box;
     margin: 0px; border: 0px; padding: 0px;
+    
     scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
 }
 /********** Importing Custom Font **********/
 @font-face{
@@ -99,7 +101,7 @@ nav ul li a:hover, nav ul li a .active{
     justify-content: center;
     gap: 50px;
     color: #fff;
-    /* scroll-snap-align: start; */
+    scroll-snap-align: start;
 }
 .slides h2{
     font-size: 70px;
