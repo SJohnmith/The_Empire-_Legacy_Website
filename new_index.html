@@ -8,43 +8,37 @@
     <link rel="stylesheet" href="css/new_style.css">
 </head>
 <body>
-    <header>    </header>
+    <header>
+        <img id="logo-txt" src="/images/logo_txt.png" alt="">
+        <nav>
+            <ul>
+                <li><a href="#home" class="nav_link active">Home</a></li>
+                <li><a href="#games" class="nav_link">Games</a></li>
+                <li><a href="#events" class="nav_link">Events</a></li>
+                <li><a href="#media" class="nav_link">Media</a></li>
+                <li><a href="#">Contact</a></li>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
     <!--Start of Main Content-->
     <div class="container">
-        <!-- Start of Top Row -->
-        <div class="row">
-            <!-- Start of Top Panel -->
-            <div class="panel body">
-                <div class="col">
-                    <div id="logo-holder" class="logo-holder">
-                        <img src="images/logo_txt.png" alt="">
-                    </div>
-                </div>
-                
-                <!-- Start of Main Navigation Buttons -->
-                <div class="col">
-                    <div class="btn-holder">
-                        <div class="btns">
-                            <a class="btn-default" href="">Game</a>
-                        </div>
-                        <div class="btns">
-                            <a class="btn-default" href="">History</a>
-                        </div>
-                        <div class="btns">
-                            <a class="btn-default" href="">Creations</a>
-                        </div>
-                        <div class="btns">
-                            <a class="btn-default" href="">Media</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- End of Main Navigation Buttons -->
-            </div>
-            <!-- End of Top Panel -->
+        <div id="home" class="slides">
+            <h2>Home</h2>
         </div>
-        <!-- End of Top Row -->
 
+        <div id="games" class="slides">
+            <h2>Games</h2>
+        </div>
+
+        <div id="events" class="slides">
+            <h2>Events</h2>
+        </div>
+
+        <div id="media" class="slides">
+            <h2>Media</h2>
+        </div>
     </div>
     <!--End of Main Content-->
 
