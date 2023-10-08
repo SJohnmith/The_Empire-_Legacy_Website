@@ -106,24 +106,24 @@ nav ul li a:hover, nav ul li a .active{
 }
 /********** Slide Content **********/
 #home{
-    background-image: url("/assets/bkgnd1.png");
+    background-image: url("assets/bkgnd1.png");
     background-size: cover;
     background-position: right;
 }
 #games{
-    background-image: url("/assets/bkgnd2.png");
+    background-image: url("assets/bkgnd2.png");
     background-size: cover;
 }
 #events{
-    background-image: url("/assets/bkgnd4.png");
+    background-image: url("assets/bkgnd4.png");
     background-size: cover;
 }
 #media{
-    background-image: url("/assets/bkgnd6.png");
+    background-image: url("assets/bkgnd6.png");
     background-size: cover;
 }
 #contact{
-    background-image: url("/assets/bkgnd5.png");
+    background-image: url("assets/bkgnd5.png");
     background-size: cover;
 }
 
