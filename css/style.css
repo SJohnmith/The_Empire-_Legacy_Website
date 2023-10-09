@@ -33,11 +33,11 @@ body{
 
 /********** Start of Header **********/
 header{
-    top: 0px; left: 0px;
     position: fixed;
-    width: 100%;
+    top: 0px; left: 0px;
     padding: 10px 10px;
-    background: #4a4a4a;
+    width: 100%;
+    background: rgba(100,0,0,0.8);
     
     display: flex;
     justify-content: space-between;
@@ -45,10 +45,30 @@ header{
     z-index: 100;
 }
 #logo-txt{
-    margin: 0px; padding: 0px;
+    margin: 0px;
+    padding: 0px;
     width: auto;
-    height: 120px;
+    height: 80px;
 }
+/********** Start of Toggle Buttons **********/
+.toggle-button{
+    position: absolute;
+    top: 35%;
+    right: 50px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50px;
+    height: 30px;
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+/********** End of Toggle Buttons **********/
+
 /********** Start of Navigation Buttons **********/
 nav{
     width: 100%;
@@ -58,10 +78,18 @@ nav{
     /* border-bottom: 1px solid rgba(28, 141, 16, 0.2); */
     /* position: sticky; */
     /* top: 10px; */
+    display: flex;
+    align-items: center;
 }
 nav ul{
     display: flex;
-    margin: 0; padding: 0px 10px;
+    margin: 0px; 
+    padding: 0px 10px;
+    /* float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
 }
 nav ul li{
     list-style: none;
@@ -107,28 +135,30 @@ nav ul li a:hover, nav ul li a .active{
     font-size: 70px;
     max-width: 650px;
 }
-/********** Slide Content **********/
+/********** Start of Slide Content **********/
 #home{
-    background-image: url("../assets/bkgnd1.jpg");
+    background-image: url("../assets/bkgnd1.png");
     background-size: cover;
     background-position: right;
 }
 #games{
-    background-image: url("../assets/bkgnd2.jpg");
+    background-image: url("../assets/bkgnd2.png");
     background-size: cover;
 }
 #events{
-    background-image: url("../assets/bkgnd4.jpg");
+    background-image: url("../assets/bkgnd4.png");
     background-size: cover;
 }
 #media{
-    background-image: url("../assets/bkgnd6.jpg");
+    background-image: url("../assets/bkgnd6.png");
     background-size: cover;
 }
 #contact{
-    background-image: url("../assets/bkgnd5.jpg");
+    background-image: url("../assets/bkgnd5.png");
     background-size: cover;
 }
+/********** End of Slide Content **********/
+/********** End of Main Content **********/
 
 /* Make Scrollbar Transparent */
 /* ::-webkit-scrollbar {
@@ -138,7 +168,7 @@ nav ul li a:hover, nav ul li a .active{
 
 
 /********** Old **********/
-.row{
+/* .row{
     width: 100%;
 }
 
@@ -150,32 +180,32 @@ nav ul li a:hover, nav ul li a .active{
     padding: 10px;
     height: auto;
     max-width: 100%;
-}
+} */
 
-.btn-default{
-    background-image: url("/images/button_default.png");
-    background-size: 100% 100%;
+/* .btn-default{ */
+    /* background-image: url("/images/button_default.png"); */
+    /* background-size: 100% 100%; */
     /* line-height: 40px; */
     /* height: 64px; */
     /* width: 256px; */
-    width: 150px;
-    font-size: 32pt;
+    /* width: 150px; */
+    /* font-size: 32pt; */
 
     /* margin-top: 0.2em; */
-    text-decoration: none;
+    /* text-decoration: none; */
     
-    color: white;    
-    text-align: center;
+    /* color: white;     */
+    /* text-align: center; */
 
-    display: grid;
-    align-items: center;
+    /* display: grid; */
+    /* align-items: center; */
 
-    margin: 0px auto;
-}
-.btn-default:hover{
+    /* margin: 0px auto; */
+/* } */
+/* .btn-default:hover{
     background-image: url("/images/button_hover.png");
     cursor: pointer;
-}
+} */
 /****************************** End of Body Elements Styling ******************************/
 
 
@@ -199,6 +229,34 @@ nav ul li a:hover, nav ul li a .active{
         float: left;
         width: 100%;
     }
+    #logo-txt{
+        margin: 0px;
+        padding: 0px;
+        width: auto;
+        height: 40px;
+    }
+    header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav{
+        width: 100%;
+        flex-direction: column;
+        display: none;
+    }
+    nav ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    nav ul li{
+        text-align: center;
+    }
+    .toggle-button{
+        display: flex;
+    }
+    .navbar-links.active{
+        display: flex;
+    }
 }
 /****************Mobile View****************/
 @media (max-width:767px)
@@ -206,6 +264,34 @@ nav ul li a:hover, nav ul li a .active{
     .col{
         float: left;
         width: 100%;
+    }
+    #logo-txt{
+        margin: 0px;
+        padding: 0px;
+        width: auto;
+        height: 40px;
+    }
+    header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav{
+        width: 100%;
+        flex-direction: column;
+        display: none;
+    }
+    nav ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    nav ul li{
+        text-align: center;
+    }
+    .toggle-button{
+        display: flex;
+    }
+    .navbar-links.active{
+        display: flex;
     }
 }
 /****************************** End of Responsive Web Design ******************************/
