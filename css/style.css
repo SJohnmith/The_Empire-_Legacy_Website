@@ -101,7 +101,7 @@ nav ul li a{
     text-decoration: none;
     text-transform: capitalize;
     font-weight: bold;
-    line-height: 50px;
+    line-height: 20px;
 }
 nav ul li a:hover, nav ul li a .active{
     /* background: #f00; */
@@ -146,8 +146,9 @@ nav ul li a:hover, nav ul li a .active{
     background-size: cover;
 }
 #events{
-    background-image: url("../assets/bkgnd4.png");
+    background-image: url("../assets/bkgnd7.png");
     background-size: cover;
+    background-position: right;
 }
 #media{
     background-image: url("../assets/bkgnd6.png");
@@ -219,7 +220,8 @@ nav ul li a:hover, nav ul li a .active{
     }
 }
 /****************Tablet View****************/
-@media (min-width:768px) and (max-width:991px)
+/* 768px */
+@media (min-width:0px) and (max-width:991px)
 {
     .col{
         float: left;
@@ -240,6 +242,7 @@ nav ul li a:hover, nav ul li a .active{
         align-items: flex-start;
     }
     nav{
+        font-size: 18px;
         width: 100%;
         flex-direction: column;
         display: none;
@@ -249,6 +252,7 @@ nav ul li a:hover, nav ul li a .active{
         flex-direction: column;
     }
     nav ul li{
+        height: auto;
         text-align: center;
     }
     .toggle-button{
@@ -264,34 +268,6 @@ nav ul li a:hover, nav ul li a .active{
     .col{
         float: left;
         width: 100%;
-    }
-    #logo-txt{
-        margin: 0px;
-        padding: 0px;
-        width: auto;
-        height: 40px;
-    }
-    header{
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    nav{
-        width: 100%;
-        flex-direction: column;
-        display: none;
-    }
-    nav ul{
-        width: 100%;
-        flex-direction: column;
-    }
-    nav ul li{
-        text-align: center;
-    }
-    .toggle-button{
-        display: flex;
-    }
-    .navbar-links.active{
-        display: flex;
     }
 }
 /****************************** End of Responsive Web Design ******************************/
