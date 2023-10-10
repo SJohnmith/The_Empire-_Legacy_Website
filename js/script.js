@@ -33,7 +33,7 @@ const slidesEls = document.querySelectorAll(".slides");
 //     });
 // });
 
-
+// On Window Scroll
 window.onscroll = () => {
     slidesEls.forEach(slide => {
         let top = window.scrollY;
@@ -50,7 +50,7 @@ window.onscroll = () => {
     });
 };
 
-
+// Update the Nav Bar Class
 const toggleButton = document.getElementsByClassName('toggle-button')[0];
 const navBarLinks = document.getElementsByClassName('navbar-links')[0];
 
