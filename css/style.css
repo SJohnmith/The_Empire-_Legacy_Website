@@ -5,7 +5,7 @@
     margin: 0px; border: 0px; padding: 0px;
     
     scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
+    /* scroll-snap-type: y mandatory; */
 }
 /********** Importing Custom Font **********/
 @font-face{
@@ -15,9 +15,6 @@
 /****************************** End of Common Styling Elements ******************************/
 
 /****************************** Start of Body Elements Styling ******************************/
-/* html{
-    scroll-behavior: smooth;
-} */
 /********** Start of Body **********/
 body{
     /* background-color: #A40000; */
@@ -53,7 +50,7 @@ header{
 /********** Start of Toggle Buttons **********/
 .toggle-button{
     position: absolute;
-    top: 35%;
+    top: 2rem;
     right: 50px;
     display: none;
     flex-direction: column;
@@ -72,7 +69,7 @@ header{
 /********** Start of Navigation Buttons **********/
 nav{
     width: 100%;
-    height: 50px;
+    /* height: 50px; */ /*Here Important*/
     /* background: rgba(100,0,0,0.8); */
     /* border-top: 1px solid rgba(70, 70, 70, 0.2); */
     /* border-bottom: 1px solid rgba(28, 141, 16, 0.2); */
@@ -101,7 +98,7 @@ nav ul li a{
     text-decoration: none;
     text-transform: capitalize;
     font-weight: bold;
-    line-height: 20px;
+    line-height: 50px;
 }
 nav ul li a:hover, nav ul li a .active{
     /* background: #f00; */
@@ -160,53 +157,6 @@ nav ul li a:hover, nav ul li a .active{
 }
 /********** End of Slide Content **********/
 /********** End of Main Content **********/
-
-/* Make Scrollbar Transparent */
-/* ::-webkit-scrollbar {
-    width: 0px;
-    background: transparent;
-} */
-
-
-/********** Old **********/
-/* .row{
-    width: 100%;
-}
-
-.btn-holder{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 10px;
-    background-color: #00203a;
-    padding: 10px;
-    height: auto;
-    max-width: 100%;
-} */
-
-/* .btn-default{ */
-    /* background-image: url("/images/button_default.png"); */
-    /* background-size: 100% 100%; */
-    /* line-height: 40px; */
-    /* height: 64px; */
-    /* width: 256px; */
-    /* width: 150px; */
-    /* font-size: 32pt; */
-
-    /* margin-top: 0.2em; */
-    /* text-decoration: none; */
-    
-    /* color: white;     */
-    /* text-align: center; */
-
-    /* display: grid; */
-    /* align-items: center; */
-
-    /* margin: 0px auto; */
-/* } */
-/* .btn-default:hover{
-    background-image: url("/images/button_hover.png");
-    cursor: pointer;
-} */
 /****************************** End of Body Elements Styling ******************************/
 
 
@@ -235,14 +185,14 @@ nav ul li a:hover, nav ul li a .active{
         margin: 0px;
         padding: 0px;
         width: auto;
-        height: 40px;
+        /* height: 80px; */
     }
     header{
         flex-direction: column;
         align-items: flex-start;
     }
     nav{
-        font-size: 18px;
+        font-size: 24px;
         width: 100%;
         flex-direction: column;
         display: none;
@@ -255,6 +205,7 @@ nav ul li a:hover, nav ul li a .active{
         height: auto;
         text-align: center;
     }
+
     .toggle-button{
         display: flex;
     }
